@@ -1,0 +1,249 @@
+2025-10-23 13:45:48.801 +05:30 [INF] User profile is available. Using 'C:\Users\jatin.kalra\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-23 13:45:49.084 +05:30 [INF] Now listening on: https://localhost:7162
+2025-10-23 13:45:49.089 +05:30 [INF] Now listening on: http://localhost:5150
+2025-10-23 13:45:49.266 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 13:45:49.268 +05:30 [INF] Hosting environment: Development
+2025-10-23 13:45:49.269 +05:30 [INF] Content root path: C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService
+2025-10-23 13:45:49.659 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - null null
+2025-10-23 13:45:49.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - 200 null text/html;charset=utf-8 270.1952ms
+2025-10-23 13:45:49.920 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - null null
+2025-10-23 13:45:49.920 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-23 13:45:49.943 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 23.1419ms
+2025-10-23 13:45:49.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.6844ms
+2025-10-23 13:45:50.380 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - null null
+2025-10-23 13:45:50.393 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.1232ms
+2025-10-23 13:46:33.611 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 67
+2025-10-23 13:46:33.680 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 13:46:33.721 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 13:46:33.954 +05:30 [INF] Login attempt for superadmin
+2025-10-23 13:46:33.957 +05:30 [INF] Checking credentials for superadmin
+2025-10-23 13:46:35.262 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 13:46:35.991 +05:30 [INF] JWT generated successfully for superadmin
+2025-10-23 13:46:35.993 +05:30 [INF] User superadmin logged in successfully
+2025-10-23 13:46:36.004 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 13:46:36.018 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 2281.3012ms
+2025-10-23 13:46:36.022 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 13:46:36.038 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 2427.2453ms
+2025-10-23 13:58:18.008 +05:30 [INF] User profile is available. Using 'C:\Users\jatin.kalra\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-23 13:58:18.236 +05:30 [INF] Now listening on: https://localhost:7162
+2025-10-23 13:58:18.238 +05:30 [INF] Now listening on: http://localhost:5150
+2025-10-23 13:58:18.379 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 13:58:18.380 +05:30 [INF] Hosting environment: Development
+2025-10-23 13:58:18.381 +05:30 [INF] Content root path: C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService
+2025-10-23 13:58:18.578 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - null null
+2025-10-23 13:58:18.806 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - 200 null text/html;charset=utf-8 227.829ms
+2025-10-23 13:58:18.810 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-23 13:58:18.810 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - null null
+2025-10-23 13:58:18.833 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 23.0246ms
+2025-10-23 13:58:18.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.9097ms
+2025-10-23 13:58:19.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - null null
+2025-10-23 13:58:19.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.5281ms
+2025-10-23 13:59:59.455 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 67
+2025-10-23 13:59:59.498 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 13:59:59.528 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 13:59:59.721 +05:30 [INF] Login attempt for superadmin
+2025-10-23 13:59:59.724 +05:30 [INF] Checking credentials for superadmin
+2025-10-23 14:00:00.872 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:00:01.593 +05:30 [INF] JWT generated successfully for superadmin
+2025-10-23 14:00:01.597 +05:30 [INF] User superadmin logged in successfully
+2025-10-23 14:00:01.605 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:00:01.619 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 2083.3916ms
+2025-10-23 14:00:01.623 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:00:01.642 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 2186.2459ms
+2025-10-23 14:02:16.008 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/register - application/json 101
+2025-10-23 14:02:16.015 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Register (KalraFintech.AuthService)'
+2025-10-23 14:02:16.023 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(KalraFintech.AuthService.DTOs.RegisterRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:02:16.037 +05:30 [INF] Registration attempt for user: orgadmin3 with role: OrgAdmin
+2025-10-23 14:02:16.040 +05:30 [INF] Starting registration for user: orgadmin3, Role: "OrgAdmin"
+2025-10-23 14:02:16.717 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`OrgId`, `PasswordHash`, `Role`, `Username`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-10-23 14:02:16.862 +05:30 [INF] User orgadmin3 successfully created with ID: 4
+2025-10-23 14:02:16.864 +05:30 [INF] User orgadmin3 registered successfully with ID: 4
+2025-10-23 14:02:16.867 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-23 14:02:16.875 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Register (KalraFintech.AuthService) in 848.5005ms
+2025-10-23 14:02:16.877 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Register (KalraFintech.AuthService)'
+2025-10-23 14:02:16.879 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/register - 200 null application/json; charset=utf-8 871.696ms
+2025-10-23 14:03:21.318 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 57
+2025-10-23 14:04:23.985 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 57
+2025-10-23 14:04:42.520 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 65
+2025-10-23 14:05:58.061 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 65
+2025-10-23 14:06:21.006 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.006 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.006 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.009 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.009 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:06:21.011 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:06:21.014 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:06:21.017 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:06:21.030 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:06:21.030 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:06:21.032 +05:30 [INF] Login attempt for superadmin
+2025-10-23 14:06:21.037 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:06:21.038 +05:30 [INF] Login attempt for superadmin
+2025-10-23 14:06:21.038 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:06:21.040 +05:30 [INF] Checking credentials for superadmin
+2025-10-23 14:06:21.048 +05:30 [INF] Checking credentials for superadmin
+2025-10-23 14:06:21.198 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:06:21.198 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:06:21.249 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:06:21.277 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:06:21.496 +05:30 [INF] JWT generated successfully for orgadmin3
+2025-10-23 14:06:21.517 +05:30 [INF] JWT generated successfully for orgadmin3
+2025-10-23 14:06:21.521 +05:30 [INF] User orgadmin3 logged in successfully
+2025-10-23 14:06:21.523 +05:30 [INF] User orgadmin3 logged in successfully
+2025-10-23 14:06:21.524 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:06:21.525 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:06:21.531 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 506.0218ms
+2025-10-23 14:06:21.537 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 516.4317ms
+2025-10-23 14:06:21.538 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.540 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.541 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 499 null application/json; charset=utf-8 180211.1974ms
+2025-10-23 14:06:21.543 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 499 null application/json; charset=utf-8 117549.8285ms
+2025-10-23 14:06:21.574 +05:30 [INF] JWT generated successfully for superadmin
+2025-10-23 14:06:21.575 +05:30 [INF] User superadmin logged in successfully
+2025-10-23 14:06:21.577 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:06:21.583 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 546.9225ms
+2025-10-23 14:06:21.587 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.590 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 23528.487ms
+2025-10-23 14:06:21.794 +05:30 [INF] JWT generated successfully for superadmin
+2025-10-23 14:06:21.797 +05:30 [INF] User superadmin logged in successfully
+2025-10-23 14:06:21.798 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:06:21.801 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 769.1518ms
+2025-10-23 14:06:21.803 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:21.809 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 499 null application/json; charset=utf-8 99282.6636ms
+2025-10-23 14:06:30.327 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 65
+2025-10-23 14:06:30.330 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:30.332 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:06:30.335 +05:30 [INF] Login attempt for superadmin
+2025-10-23 14:06:30.337 +05:30 [INF] Checking credentials for superadmin
+2025-10-23 14:06:30.340 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:06:30.560 +05:30 [INF] JWT generated successfully for superadmin
+2025-10-23 14:06:30.563 +05:30 [INF] User superadmin logged in successfully
+2025-10-23 14:06:30.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:06:30.569 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 235.3662ms
+2025-10-23 14:06:30.582 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:30.584 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 256.7926ms
+2025-10-23 14:06:57.515 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 55
+2025-10-23 14:06:57.519 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:57.520 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:06:57.524 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:06:57.525 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:06:57.528 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:06:57.734 +05:30 [INF] JWT generated successfully for orgadmin3
+2025-10-23 14:06:57.736 +05:30 [INF] User orgadmin3 logged in successfully
+2025-10-23 14:06:57.737 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:06:57.739 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 215.6115ms
+2025-10-23 14:06:57.741 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:06:57.743 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 227.1494ms
+2025-10-23 14:07:35.329 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7162/api/test/protected - text/plain 65
+2025-10-23 14:07:35.389 +05:30 [INF] Executing endpoint 'TestController.Protected (KalraFintech.AuthService)'
+2025-10-23 14:07:35.392 +05:30 [INF] Route matched with {action = "Protected", controller = "Test"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Protected() on controller TestController (KalraFintech.AuthService).
+2025-10-23 14:07:35.395 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-10-23 14:07:35.397 +05:30 [INF] Executed action TestController.Protected (KalraFintech.AuthService) in 2.6328ms
+2025-10-23 14:07:35.399 +05:30 [INF] Executed endpoint 'TestController.Protected (KalraFintech.AuthService)'
+2025-10-23 14:07:35.401 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7162/api/test/protected - 200 null text/plain; charset=utf-8 72.3978ms
+2025-10-23 14:07:42.277 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7162/api/test/admin - text/plain 65
+2025-10-23 14:07:42.286 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperAdmin)
+2025-10-23 14:07:42.290 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-10-23 14:07:42.291 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7162/api/test/admin - 403 0 null 13.6279ms
+2025-10-23 14:11:32.743 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 54
+2025-10-23 14:12:06.076 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 55
+2025-10-23 14:12:23.853 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:23.860 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:23.862 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:12:23.864 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:12:23.871 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:12:23.880 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:12:23.881 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:12:23.882 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:12:23.902 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:12:23.902 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:12:24.142 +05:30 [WRN] User not found OR Invalid password : orgadmin3
+2025-10-23 14:12:24.143 +05:30 [WRN] Invalid login for orgadmin3
+2025-10-23 14:12:24.143 +05:30 [INF] JWT generated successfully for orgadmin3
+2025-10-23 14:12:24.146 +05:30 [INF] User orgadmin3 logged in successfully
+2025-10-23 14:12:24.147 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:12:24.149 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 270.139ms
+2025-10-23 14:12:24.153 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:24.153 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-23 14:12:24.154 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 18078.3017ms
+2025-10-23 14:12:24.161 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 294.1185ms
+2025-10-23 14:12:24.166 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:24.169 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 499 null application/json; charset=utf-8 51425.5462ms
+2025-10-23 14:12:32.088 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 55
+2025-10-23 14:12:32.092 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:32.096 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:12:32.099 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:12:32.102 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:12:32.106 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:12:32.323 +05:30 [INF] JWT generated successfully for orgadmin3
+2025-10-23 14:12:32.324 +05:30 [INF] User orgadmin3 logged in successfully
+2025-10-23 14:12:32.326 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-10-23 14:12:32.328 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 229.4123ms
+2025-10-23 14:12:32.329 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:32.331 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 200 null application/json; charset=utf-8 242.7835ms
+2025-10-23 14:12:50.303 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/auth/login - application/json 54
+2025-10-23 14:12:50.306 +05:30 [INF] Executing endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:50.308 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(KalraFintech.AuthService.DTOs.LoginRequestDto) on controller KalraFintech.AuthService.Controllers.AuthController (KalraFintech.AuthService).
+2025-10-23 14:12:50.311 +05:30 [INF] Login attempt for orgadmin3
+2025-10-23 14:12:50.313 +05:30 [INF] Checking credentials for orgadmin3
+2025-10-23 14:12:50.317 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`OrgId`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__username_0
+LIMIT 1
+2025-10-23 14:12:50.523 +05:30 [WRN] User not found OR Invalid password : orgadmin3
+2025-10-23 14:12:50.524 +05:30 [WRN] Invalid login for orgadmin3
+2025-10-23 14:12:50.525 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-23 14:12:50.527 +05:30 [INF] Executed action KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService) in 216.0087ms
+2025-10-23 14:12:50.529 +05:30 [INF] Executed endpoint 'KalraFintech.AuthService.Controllers.AuthController.Login (KalraFintech.AuthService)'
+2025-10-23 14:12:50.531 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/auth/login - 401 null application/json; charset=utf-8 228.1393ms

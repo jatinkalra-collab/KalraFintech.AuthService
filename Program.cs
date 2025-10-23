@@ -9,7 +9,20 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .Enrich.FromLogContext()
+    .MinimumLevel.Information()
+    .CreateLogger();
+
+// Replace default logging with Serilog
+builder.Host.UseSerilog();
 
 // Add services to the container
 builder.Services.AddControllers();
@@ -54,6 +67,10 @@ builder.Services.AddSingleton<JwtUtils>();
 
 
 var app = builder.Build();
+
+// Global exception handling middleware
+app.UseMiddleware<ExceptionLoggingMiddleware>();
+
 
 if (app.Environment.IsDevelopment())
 {

@@ -157,3 +157,4 @@ C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService\obj\Debu
 C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService\obj\Debug\net8.0\KalraFintech.AuthService.genruntimeconfig.cache
 C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService\obj\Debug\net8.0\ref\KalraFintech.AuthService.dll
 C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\jatin.kalra\source\repos\KalraFintech\KalraFintech.AuthService\obj\Debug\net8.0\KalraFintech.AuthService.sourcelink.json

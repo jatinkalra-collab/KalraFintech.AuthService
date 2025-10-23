@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KalraFintech.AuthService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f8992280bc1d1a636cca0a2823d16207f5af33c")]
 [assembly: System.Reflection.AssemblyProductAttribute("KalraFintech.AuthService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KalraFintech.AuthService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
